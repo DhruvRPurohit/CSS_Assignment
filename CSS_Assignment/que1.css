@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+}
+
+.grid-gallery{
+    display: grid;
+    height: 550px;
+    width: 80vw;
+    grid-template-columns: repeat(6 ,1fr);
+    gap: 15px;
+}
+
+.grid-gallery > div{
+    border: 2px solid white;
+}
+
+.sub1{
+    background: url(./img/img1.png);
+    background-size: cover;
+    background-position: center;
+    grid-column: 1/ 4 span;
+    grid-row: 1;
+}
+
+.sub2{
+    background: url(./img/img2.png);
+    grid-column: 5/2 span;
+    grid-row: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sub3{
+    background: url(./img/img3.png);
+    grid-column:  1/1 span;
+    grid-row: 2;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sub4{
+    background: url(./img/img4.png);
+    grid-column: 2/ 4 span;
+    grid-row: 2;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.sub5{
+    background: url(./img/img5.png);
+    grid-column: 6/ 1 span;
+    grid-row: 2;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sub6{
+    background: url(./img/img6.png);
+    grid-column: 1/3 span;
+    grid-row: 3;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sub7{
+    background: url(./img/img7.png);
+    grid-column: 4/3 span;
+    grid-row: 3;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sub8{
+    background: url(./img/img8.jpg);
+    grid-column: 1/2 span;
+    grid-row: 4;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sub9{
+    background: url(./img/img9.jpg);
+    grid-column: 3/2 span;
+    grid-row: 4;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sub10
+{
+    background: url(./img/img10.jpg);
+    grid-column: 5/2 span;
+    grid-row: 4;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.contanier{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.shutter{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    gap: 15px;
+    text-align: end;
+    align-items: end;
+    padding: 0px 20px;
+}
+
+.logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

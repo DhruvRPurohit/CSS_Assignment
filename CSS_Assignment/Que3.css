@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.card{
+    height: 240px;
+    width: 280px;
+    border: 2px solid gray;
+    
+}
+
+.screen{
+    height: 100px;
+    width: auto;
+    background-color: black;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    border: 2x solid red;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+} 
+
+.container{
+    height: auto;
+    width: auto;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: auto auto auto;
+}

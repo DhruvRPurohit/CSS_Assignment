@@ -1,0 +1,42 @@
+.box1{
+    height: 320px;
+    width: 150px;
+    background-color:aqua;
+    border: 1px solid white;
+    padding: 15px;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.box2{
+    height: 320px;
+    width: 300px;
+    background-color: aqua;
+    border: 1px solid white;
+    padding: 15px;
+}
+.div{
+    padding: 15px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+}
+.div button{
+    padding: 0px 12px ;
+}
+.div2{
+    text-align: center;
+}
+.div2 button{
+    width: 100%;
+}

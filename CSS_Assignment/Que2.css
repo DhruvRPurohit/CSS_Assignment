@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.contianer{
+    clip-path: polygon(50% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
+    background-image: url(./img/img10.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 580px;
+    width: 100%;
+    color: white;
+
+}
+
+.top{
+    background-color: transparent;
+    color: black;
+}
+
+.navbar-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.top-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.top-items > div{
+    background-color: transparent;
+    color: white;
+}
+.main-content{
+    height: 420px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.center-content{
+    height: auto;
+    width: 350px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.left-arrow{
+    height: 20px;
+    width: 25px;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid black;
+}
+.right-arrow{
+    height: 20px;
+    width: 25px;
+    text-align: center;
+    background-color: red;
+    border: 2px solid black;
+}
+
+.main-btns > button{
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    height: 40px;
+    width: 150px;
+}
+
+.last-arrow{
+    position: absolute;
+    left: 49%;
+    top: 87%;
+    background-color: white;
+    color: orange;
+    border-radius: 50%;
+    border: 1px solid orange;
+}
