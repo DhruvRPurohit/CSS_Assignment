@@ -1,0 +1,20 @@
+
+.col{
+    height: 200px;
+    width: auto;
+}
+
+.col > img{
+    height: 200px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 2px 2px 4px;
+    border-radius: 4px;
+}
+.row{
+    padding: 10px;
+}
+
+
