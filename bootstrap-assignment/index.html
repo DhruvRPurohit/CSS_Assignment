@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Interval</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    
+    <div class="cotainare-fluid">
+        <h3>Date Interval</h3>
+        <span>from :<input type="date" name="" id="from" placeholder="23/12/2003"> </span> <br>
+        <span>To : <input type="date" name="" id="to"> </span>
+        <br>
+        <div class="div">
+            <button id="calculate">Calclulate</button>
+        </div>
+
+       
+    </div>
+    <div class="box">
+        <div class="result" id="result" style="display: none;" >
+            <p id="content"> </p>
+            <hr>
+            <p id="years"></p>
+            <p id="months"></p>
+            <p id="weeks"></p>
+            <p id="days"></p>
+            <hr>
+        </div>
+    </div>
+    
+
+    <scrip src="bootstrap.min.js"></script>
+  
+    <script>
+        $(document).ready(function () {
+            $("#calculate").click(function () {
+                // Retrieve the start and end dates
+                let startdate = new Date($("#from").val());
+                let enddate = new Date($("#to").val());
+
+                // Validate if start date is after end date
+                if (startdate > enddate) {
+                    alert("Start date cannot be greater than End date");
+                    return;
+                }
+
+                let diff = enddate - startdate;
+
+                // Convert the difference to days
+                let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+                // Calculate years, months, and weeks
+                let years = Math.floor(days / 365);
+                let months = Math.floor(days / 30.44);
+                let weeks = Math.floor(days / 7);
+
+                // Display the results
+                $("#content").html("Date Interval Between <br> " + startdate.toLocaleDateString() + "   To  " + enddate.toLocaleDateString());
+                $("#years").text("In years: " + years);
+                $("#months").text("In months: " + months);
+                $("#weeks").text("In weeks: " + weeks);
+                $("#days").text("In days: " + days);
+                $("#result").show();
+            });
+        });
+
+    </script>
+    
+</html>
